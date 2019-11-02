@@ -1,0 +1,196 @@
+@import './styles/variables.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// container
+.container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1120px;
+  width: 100%;
+  padding: 15px 40px;
+  @media only screen and (max-width: 600px) {
+    padding: 15px 20px
+  }
+}
+
+// padding
+.pd-top-80 {
+  padding-top: 100px;
+}
+
+// margin
+.mr-1 {
+  margin-right: 10px;
+}
+
+
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+
+.mr-2 {
+  margin-right: 20px;
+}
+
+// flex
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+
+.align-center {
+  align-items: center
+}
+
+.align-start {
+  align-items: flex-start
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+// headings
+h1,
+h2,
+h3,
+h4 {
+  color: $blue-dark;
+}
+
+// font size
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-44 {
+  font-size: 44px;
+}
+
+// font color
+.text-blue {
+  color: $blue;
+}
+
+.text-blue-light {
+  color: $blue-light;
+}
+
+.text-blue-med {
+  color: $blue-med;
+}
+
+.text-blue-dark {
+  color: $blue-dark;
+}
+
+.active {
+  color: $green;
+  border-bottom: 3px solid $green;
+}
+
+.line-light {
+  height: 1px;
+  background: $gray;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.expand {
+  width: 100%;
+}
+
+// position
+.relative {
+  position: relative;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.italic {
+  font-style: italic;
+}
+
+// font-weight
+.w-600 {
+  font-weight: 600;
+}
+
+// buttons
+.btn {
+  border: 2px solid $blue-dark;
+  padding: 10px 15px;
+  display: inline-flex;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &.btn-pri {
+    color: $blue-dark;
+    background-color: rgba(0, 0, 0, 0);
+    &:hover{
+    	background-color: $blue-dark;
+    	color: #fff;
+    }
+  }
+
+}
+
+.desktop-only{
+  display: inline-block;
+   @media only screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+select{
+  background: #fff;
+}

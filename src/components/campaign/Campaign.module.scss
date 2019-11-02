@@ -1,0 +1,153 @@
+@import '../../styles/variables.scss';
+
+.campaignNavEle {
+  padding: 10px 20px;
+}
+
+.campaignWrrapper {
+  box-shadow: 0 0 4px $gray;
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  flex-direction: column;
+
+  @media only screen and (max-width: 600px) {
+    width: auto;
+  }
+
+  .campaignHead,
+  .campaignRow {
+    background-color: $gray;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    color: $blue-dark;
+    padding: 12px 15px;
+    font-weight: 600;
+
+    .campaignRowEle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 15px;
+
+      &.date {
+        width: 15%;
+        flex-grow: 1;
+
+        @media only screen and (max-width: 600px) {
+          width: auto;
+        }
+      }
+
+      &.campaign {
+        width: 25%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-grow: 1;
+
+        @media only screen and (max-width: 600px) {
+          width: auto;
+        }
+
+        img {
+          width: 40px;
+          height: auto;
+          margin-right: 10px;
+        }
+
+        .campaignEle {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+        }
+      }
+
+      &.view {
+        width: 20%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-grow: 1;
+
+        @media only screen and (max-width: 600px) {
+          width: auto;
+        }
+
+        img {
+          width: 20px;
+          height: auto;
+          margin-right: 5px;
+        }
+      }
+
+      &.actions {
+        width: 30%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-grow: 1;
+
+        @media only screen and (max-width: 600px) {
+          width: auto;
+        }
+
+        .actionsEle {
+          display: flex;
+          align-items: center;
+          flex-grow: 1;
+
+          img {
+            width: 20px;
+            height: auto;
+            margin-right: 5px;
+          }
+
+        }
+      }
+    }
+
+  }
+
+  .campaignBody {
+    .campaignRow {
+      background-color: #fff;
+      color: $blue-dark;
+      font-weight: normal;
+      position: relative;
+      padding: 15px;
+    }
+  }
+}
+
+.pricingWrapper {
+  .pricingHead {
+    display: flex;
+    align-items: flex-end;
+    color: $blue-dark;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    img {
+      width: 120px;
+      box-shadow: 0 0 4px $gray;
+    }
+
+    .pricingName {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 50px;
+    }
+  }
+
+  .pricingValue {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}
