@@ -1,13 +1,14 @@
 import React from "react";
 
 import styles from './Header.module.scss'
+import logo from '../../images/logo.png'
 
 function HeaderView(props) {
   return (
     <header>
     	<div className="container">
 	    	<div className={styles.logo}>
-	    		<img src="../images/logo.png" alt="logo"/>
+	    		<img src={logo} alt="logo"/>
 	    	</div>
 	    	
     	

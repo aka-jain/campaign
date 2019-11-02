@@ -4,6 +4,10 @@ import LocalizedStrings from 'react-localization';
 import { formatDate, getDays } from '../../utils/helper.js';
 import { localizedStrings } from '../../utils/localization.js';
 import styles from './Campaign.module.scss';
+import price from '../../images/Price.png'
+import file from '../../images/file.png'
+import calendar from '../../images/calendar.png'
+import report from '../../images/statistics-report.png'
 
 let strings = new LocalizedStrings(localizedStrings)
 
@@ -49,18 +53,18 @@ function CampaignView(props) {
                   </div>
               </div>
               <div className={`${styles.campaignRowEle} ${styles.view} fs-14 flex-row pointer`} onClick={() => toggleModal(campaign)}>
-                <img src="../../images/Price.png" alt="price"/> {strings.viewPricing}
+                <img src={price} alt="price"/> {strings.viewPricing}
               </div>
               <div className={`${styles.campaignRowEle} ${styles.actions}`}>
                 <div className={`${styles.actionsEle}`}>
-                  <img src="../../images/file.png" alt="file"/> <span className="desktop-only">CSV</span>
+                  <img src={file} alt="file"/> <span className="desktop-only">CSV</span>
                 </div>
                 <div className={`${styles.actionsEle}`}>
-                  <img src="../../images/statistics-report.png" alt="statistics"/> <span className="desktop-only">{strings.report}</span>
+                  <img src={report} alt="statistics"/> <span className="desktop-only">{strings.report}</span>
                 </div>
                 <div className={`${styles.actionsEle} pointer`} onClick={() => toggleDateModal(campaign)}>
                   
-                  <img src="../../images/calendar.png" alt="calendar"/> <span className="desktop-only">{strings.scheduleAgain}</span>
+                  <img src={calendar} alt="calendar"/> <span className="desktop-only">{strings.scheduleAgain}</span>
                 </div>
               </div>
               <div className="line-light" />

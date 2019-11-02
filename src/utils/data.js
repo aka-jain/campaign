@@ -1,3 +1,6 @@
+import image1 from '../images/80.png'
+import image2 from '../images/80-2.png'
+
 export const data = [{
     "id":1,
     "name": "Test Whatsapp",
@@ -18,7 +21,7 @@ export const data = [{
     ],
     "csv": "Some CSV link for Whatsapp",
     "report": "Some report link for Whatsapp",
-    "image_url": "../../images/80.png"
+    "image_url": image1
   },
   {
     "id":2,
@@ -40,7 +43,7 @@ export const data = [{
     ],
     "csv": "Some CSV link for Super Jewels Quest",
     "report": "Some report link for Super Jewels Ques",
-    "image_url": "../../images/80.png"
+    "image_url": image1
   },
   {
     "id":3,
@@ -62,7 +65,7 @@ export const data = [{
     ],
     "csv": "Some CSV link for Mole Slayer",
     "report": "Some report link for Mole Slayer",
-    "image_url": "../../images/80.png"
+    "image_url": image1
   },
   {
     "id":4,
@@ -84,7 +87,7 @@ export const data = [{
     ],
     "csv": "Some CSV link for Mancala Mix",
     "report": "Some report link for Mancala Mix",
-    "image_url": "../../images/80-2.png"
+    "image_url": image2
   },
   {
     "id":5,
@@ -106,7 +109,7 @@ export const data = [{
     ],
     "csv": "Some CSV link for Mancala Mix",
     "report": "Some report link for Mancala Mix",
-    "image_url": "../../images/80-2.png"
+    "image_url": image2
   },
   {
     "id":6,
@@ -128,6 +131,6 @@ export const data = [{
     ],
     "csv": "Some CSV link for Mancala Mix",
     "report": "Some report link for Mancala Mix",
-    "image_url": "../../images/80-2.png"
+    "image_url": image2
   }
 ]
