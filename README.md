@@ -2,8 +2,8 @@
 
 In the project directory, you can run:
 
-### `npm install`
-### `npm run solution`
+#### `npm install`
+#### `npm run solution`
 
 Open [http://localhost:8080](http://localhost:3000) to view it in the browser.
 
@@ -11,7 +11,7 @@ Open [http://localhost:8080](http://localhost:3000) to view it in the browser.
 
 In the project directory, you can run:
 
-### `npm run test`
+#### `npm run test`
 
 
 ## View details
@@ -21,11 +21,11 @@ It will automatically downloads `resultset.json`
 
 ## Libraries used
 
-### webpack
+#### webpack
 
 For bundling all files and generate `dist` to serve our app. To generate test and confifure chai mocha with webpack
 
-### Babel
+#### Babel
 For transpiling ES6 to ES5 with dependencies
 ```
 	@babel/core": "^7.7.2",
@@ -35,11 +35,11 @@ For transpiling ES6 to ES5 with dependencies
     "babel-preset-env": "^1.7.0",
 ```
 
-### Chai and Mocha
+#### Chai and Mocha
 
 For assertion and test runner
 
-### sass-loader and node-sass
+#### sass-loader and node-sass
 
 To install scss support to app
 
